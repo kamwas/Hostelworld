@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E02CE861C5238D900740C25 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02CE851C5238D900740C25 /* MBProgressHUD.m */; };
 		8E36C8DD1C51103500368AB9 /* HWDAllPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E36C8DC1C51103500368AB9 /* HWDAllPropertiesViewController.swift */; };
 		8E36C8DF1C51125500368AB9 /* HWDPropertyBasicInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E36C8DE1C51125500368AB9 /* HWDPropertyBasicInformationCell.swift */; };
 		8E36C8FA1C5144BE00368AB9 /* HWModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E36C8F91C5144BE00368AB9 /* HWModel.framework */; };
@@ -32,6 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E02CE831C5238D900740C25 /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		8E02CE841C5238D900740C25 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8E02CE851C5238D900740C25 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8E02CE871C52393C00740C25 /* HostelWorldDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HostelWorldDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E36C8DC1C51103500368AB9 /* HWDAllPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDAllPropertiesViewController.swift; sourceTree = "<group>"; };
 		8E36C8DE1C51125500368AB9 /* HWDPropertyBasicInformationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDPropertyBasicInformationCell.swift; sourceTree = "<group>"; };
 		8E36C8F91C5144BE00368AB9 /* HWModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HWModel.framework; path = "../../../Library/Developer/Xcode/DerivedData/Hostelworld-fkrhepulpnsgbacwvmutknxlhmfb/Build/Products/Debug-iphoneos/HWModel.framework"; sourceTree = "<group>"; };
@@ -58,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E02CE811C5238D900740C25 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8E02CE821C5238D900740C25 /* MBProgressHUD */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		8E02CE821C5238D900740C25 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8E02CE831C5238D900740C25 /* MBProgressHUD-Prefix.pch */,
+				8E02CE841C5238D900740C25 /* MBProgressHUD.h */,
+				8E02CE851C5238D900740C25 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		8E36C8D91C51103500368AB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +126,7 @@
 		8E5C0D6E1C50F1020090A216 /* HostelWorldDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E02CE811C5238D900740C25 /* External */,
 				8E36C8D91C51103500368AB9 /* Views */,
 				8E36C8DB1C51103500368AB9 /* ViewControllers */,
 				8E5C0D6F1C50F1020090A216 /* AppDelegate.swift */,
@@ -110,6 +134,7 @@
 				8E5C0D761C50F1020090A216 /* Assets.xcassets */,
 				8E5C0D781C50F1020090A216 /* LaunchScreen.storyboard */,
 				8E5C0D7B1C50F1020090A216 /* Info.plist */,
+				8E02CE871C52393C00740C25 /* HostelWorldDemo-Bridging-Header.h */,
 			);
 			path = HostelWorldDemo;
 			sourceTree = "<group>";
@@ -198,6 +223,7 @@
 			files = (
 				8E5C0D701C50F1020090A216 /* AppDelegate.swift in Sources */,
 				8EF5AF231C51782D0070CA6B /* HWDPropertyViewController.swift in Sources */,
+				8E02CE861C5238D900740C25 /* MBProgressHUD.m in Sources */,
 				8E36C8DF1C51125500368AB9 /* HWDPropertyBasicInformationCell.swift in Sources */,
 				8E36C8DD1C51103500368AB9 /* HWDAllPropertiesViewController.swift in Sources */,
 			);
@@ -265,6 +291,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HostelWorldDemo/HostelWorldDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HostelWorldDemo/HostelWorldDemo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

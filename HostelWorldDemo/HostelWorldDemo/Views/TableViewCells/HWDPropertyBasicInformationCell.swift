@@ -10,6 +10,7 @@ import UIKit
 
 class HWDPropertyBasicInformationCell: UITableViewCell {
 
+    @IBOutlet weak var loadingImageIndicator: UIActivityIndicatorView!
     @IBOutlet weak var propertyNameLabel: UILabel!
     @IBOutlet weak var propertyImage: UIImageView!
     @IBOutlet weak var propertyTypeLabel: UILabel!

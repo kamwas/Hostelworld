@@ -14,11 +14,14 @@ class HWDAllPropertiesViewController: UITableViewController{
     var propertiesExtendedInfromation:Dictionary<Int,HWMProperty>  = Dictionary<Int,HWMProperty>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let progress = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        progress.labelText = "Loading data"
         HWMServerConnection.sharedInstance.getPropertiesForDefaultCityWithCompletionHandler { properties, error in
             if let data = properties {
                 self.propertiesBasicInformation = data
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.tableView.reloadData()
+                    progress.hide(true);
                 })
             }
         }
@@ -50,6 +53,7 @@ class HWDAllPropertiesViewController: UITableViewController{
                     if let img = image {
                         cell.propertyImage.image = img
                     }
+                    cell.loadingImageIndicator.stopAnimating()
                 }
             })
         }
